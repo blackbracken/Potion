@@ -1,13 +1,13 @@
-package black.bracken.potion.character;
+package black.bracken.potion.creature;
 
 /**
  * @author BlackBracken
  */
-public interface Character {
+public interface Creature {
 
     String getName();
 
-    void attack(Character victim);
+    void attack(Creature victim);
 
     int getHp();
 

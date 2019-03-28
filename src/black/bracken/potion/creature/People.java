@@ -1,9 +1,9 @@
-package black.bracken.potion.character;
+package black.bracken.potion.creature;
 
 /**
  * @author BlackBracken
  */
-public final class People implements Character {
+public final class People implements Creature {
 
     private final String name;
 
@@ -15,7 +15,7 @@ public final class People implements Character {
     }
 
     @Override
-    public void attack(Character victim) {
+    public void attack(Creature victim) {
         victim.damage(30);
 
         System.out.println(getName() + ": " + victim.getName() + "に30ダメージを与える(残りHP: " + victim.getHp() + ")");
